@@ -23,6 +23,7 @@ a {
 	text-decoration: none;
 }
 
+
 //-------Header start------------
 .header {
 	background-color: $white;
@@ -123,3 +124,173 @@ a {
 	color: $white;
 }
 //------Header end---------------
+
+
+//-------Section best start------
+.best__container {
+	display: flex;
+	position: relative;
+}
+
+.best__goods {
+	background: #F2F2F2;
+	width: 73.5%;
+}
+
+.goods__container {
+	display: flex;
+	align-items: center;
+	padding: 72px 60px 52px 15px;
+	justify-content: flex-end;
+}
+
+.goods__del img{
+	position: absolute;
+	top: 97px;
+}
+
+.goods__info {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 105px;
+	height: 340px;
+	position: relative;
+}
+
+.goods__scrool {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 16px;
+	&:hover {
+		color: $blue;
+		transform: translateY(-10px);
+		@include hover;
+	}
+	p {
+		writing-mode: tb;
+		transform: rotate(180deg);
+	}
+}
+
+.goods__new {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	color: #838383;
+}
+
+.goods__title {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 59px;
+	color: $lighBlack;
+	max-width: 404px;
+	margin: 15px 0 60px 0;
+}
+
+.goods__more {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 12px;
+	a {
+		width: 55px;
+		height: 55px;
+		background: $blue;
+		border-radius: 50%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		color: $lighBlack;
+	}
+	&:hover {
+		a {
+			opacity: 0.8;
+			@include hover;
+		}
+		span {
+			opacity: 0.8;
+			color: $blue;
+			@include hover;
+		}
+	}
+}
+
+.goods__carousel {
+	position: relative;
+}
+
+.carousel__slider {
+	max-width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.carousel__buttons {
+	display: inline-flex;
+	column-gap: 80px;
+	position: absolute;
+	right: -212px;
+	bottom: 100px;
+}
+
+.carousel__dots {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.carousel__dot {
+	width: 5px;
+	height: 5px;
+	background: #D0D0D0;
+	border-radius: 50%;
+	&_active {
+		width: 10px;
+		height: 10px;
+		background: $black;
+	}
+	&:hover {
+		@include hover;
+		background-color: $black;
+	}
+}
+
+.carousel__button {
+	border: none;
+	background: inherit;
+	&:hover {
+		@include hover;
+		transform: translateX(16px);
+	}
+}
+
+.best__offers {
+	width: 26.5%;
+	background: $darkWhite;
+}
+
+.offers__container {
+	max-width: 100%;
+	position: relative;
+	img {
+		width: 100%;
+	}
+	p {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 130%;
+		color: $lighBlack;
+		max-width: 181px;
+		position: absolute;
+		left: 40px;
+		bottom: 63px;
+	}
+}
+//-------Section best end--------
