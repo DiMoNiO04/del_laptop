@@ -164,7 +164,7 @@ a {
 }
 
 .best__goods {
-	background: #F2F2F2;
+	background: $lightWhite;
 	width: 73.5%;
 }
 
@@ -208,7 +208,7 @@ a {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 24px;
-	color: #838383;
+	color: $lightGray;
 }
 
 .goods__title {
@@ -321,13 +321,13 @@ a {
 		font-weight: 300;
 		font-size: 18px;
 		line-height: 150%;
-		color: #838383;
+		color: $lightGray;
 		margin: 29px 0 46px 0;
 	}
 }
 
 .catalog__item {
-	background: #F2F2F2;
+	background: $lightWhite;
 	border-radius: 20px;
 	position: relative;
 	&:nth-child(2) img {
@@ -359,7 +359,7 @@ a {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 24px;
-	color: #838383;
+	color: $lightGray;
 }
 
 .catalog__name {
@@ -389,3 +389,98 @@ a {
 	}
 }
 //------Section catalog end-------
+
+
+//-----Section advantages start------
+.advantages {
+	background: $lightWhite;
+	position: relative;
+}
+
+.advantages__best {
+	position: absolute;
+	top: 152px;
+}
+
+.advantages__container {
+	display: flex;
+	flex-direction: column;
+	padding: 87px 0 45px 0;
+	row-gap: 48px;
+	position: relative;
+}
+
+.advantages__main {
+	display: flex;
+}
+
+.advantages__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 13px;
+}
+
+.advantages__title {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 50px;
+	color: $lighBlack;
+}
+
+.advantages__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: $lightGray;
+	margin: 37px 0 41px 0;
+}
+
+.advantages__items {
+	display: flex;
+	column-gap: 27px;
+}
+
+.advantages__item {
+	background: $lighBlack;
+	border-radius: 18px;
+	position: relative;
+	padding: 30px 28px 35px 30px;
+	max-width: 330px;
+}
+
+.advantages__back {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.advantages__image {
+	width: 70px;
+	height: 70px;
+	background: #343A41;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.advantage__title {
+	font-family: 'Euclid Circular A', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;
+	color: $white;
+}
+
+.advantages__desc {
+	font-family: 'Euclid Circular A', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: #B7B7B7;
+}
+//-----Section advantages end--------
