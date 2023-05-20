@@ -21,10 +21,10 @@
 		<div class="container">
 			<div class="header__container">
 				<div class="header__menu">
-					<div class="logo">
+					<div>
 						<img src="./assets/svg/dell_logo.svg" alt="dell_logo">
 					</div>
-					<nav class="header__nav">
+					<nav>
 						<ul class="header__items">
 							<li class="header__item">
 								<a href="#" class="header__link">Главная </a>
@@ -43,27 +43,33 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="header__search">
+					<div>
 						<img src="./assets/svg/search.svg" alt="search" title="Поиск">
 					</div>
 				</div>
 				<div class="header__panel">
-					<p class="panel-name">Мария</p>
+					<p>Мария</p>
 					<ul class="header__panel-items">
 						<li class="panel-item">
-							<img src="./assets/svg/user.svg" alt="user">
+							<a href="#">
+								<img src="./assets/svg/user.svg" alt="user">
+							</a>
 						</li>
 						<li class="panel-item">
-							<img src="./assets/svg/diagram.svg" alt="diagram">
+							<a href="#">
+								<img src="./assets/svg/diagram.svg" alt="diagram">
+							</a>
 						</li>
 						<li class="panel-item">
-							<img src="./assets/svg/heart.svg" alt="heart">
+							<a href="#">
+								<img src="./assets/svg/heart.svg" alt="heart">
+							</a>
 						</li>
 						<li class="panel-item">
-							<img src="./assets/svg/bag.svg" alt="bag">
-							<div class="panel-item__count">
-								3
-							</div>
+							<a href="#">
+								<img src="./assets/svg/bag.svg" alt="bag">
+								<span class="panel-item__count">3</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -72,8 +78,7 @@
 	</header>
 
 	<main>
-
-		<section>
+		<section class="goods">
 			<div class="best__container">
 				<aside class="best__goods">
 					<div class="goods__container">
@@ -86,8 +91,8 @@
 								<img src="./assets/svg/union.svg" alt="union">
 							</div>
 							<div class="goods__content">
-								<p class="goods__new">Новое поступление</p>
-								<h1 class="goods__title">Лучшие товары от компании Dell</h1>
+								<p class="subtitle">Новое поступление</p>
+								<p class="goods__title title">Лучшие товары от компании Dell</p>
 								<div class="button__more">
 									<a href="#">
 										<img src="./assets/svg/arrow-left.svg" alt="more">
@@ -124,13 +129,13 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="catalog">
 			<div class="container">
 				<div class="catalog__container">
 					<ul class="catalog__items">
 						<li class="catalog__item catalog__info">
-							<span class="info__title">Каталог товаров от Dell</span>
-							<p>Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
+							<p class="title">Каталог товаров от Dell</p>
+							<p class="catalog__subtitle subtitle">Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
 							<div class="button__more">
 								<a href="#">
 									<img src="./assets/svg/arrow-left.svg" alt="more">
@@ -140,53 +145,63 @@
 						</li>
 						<li class="catalog__item">
 							<span class="catalog__number">01</span>
-							<div class="catalog__image">
-								<img src="./assets/img/laptoops.png" alt="Laptoops">
-							</div>
-							<div class="catalog__desc">
-								<p class="catalog__count">105 товаров</p>
-								<p class="catalog__name">Ноутбуки</p>
-							</div>
+							<figure class="catalog__figure">
+								<div class="catalog__image">
+									<img src="./assets/img/laptoops.png" alt="Laptoops">
+								</div>
+								<figcaption class="catalog__desc">
+									<p class="catalog__count">105 товаров</p>
+									<p class="catalog__name">Ноутбуки</p>
+								</figcaption>
+							</figure>
 						</li>
 						<li class="catalog__item">
 							<span class="catalog__number">02</span>
-							<div class="catalog__image">
-								<img src="./assets/img/PK.png" alt="PK">
-							</div>
-							<div class="catalog__desc">
-								<p class="catalog__count">65 товаров</p>
-								<p class="catalog__name">Персональные компьютеры</p>
-							</div>
+							<figure class="catalog__figure">
+								<div class="catalog__image">
+									<img src="./assets/img/PK.png" alt="PK">
+								</div>
+								<figcaption class="catalog__desc">
+									<p class="catalog__count">65 товаров</p>
+									<p class="catalog__name">Персональные компьютеры</p>
+								</figcaption>
+							</figure>
 						</li>
 						<li class="catalog__item">
 							<span class="catalog__number">03</span>
-							<div class="catalog__image">
-								<img src="./assets/img/servers.png" alt="Servers">
-							</div>
-							<div class="catalog__desc">
-								<p class="catalog__count">13 товаров</p>
-								<p class="catalog__name">Cерверы</p>
-							</div>
+							<figure class="catalog__figure">
+								<div class="catalog__image">
+									<img src="./assets/img/servers.png" alt="Servers">
+								</div>
+								<figcaption class="catalog__desc">
+									<p class="catalog__count">13 товаров</p>
+									<p class="catalog__name">Cерверы</p>
+								</figcaption>
+							</figure>
 						</li>
 						<li class="catalog__item">
 							<span class="catalog__number">04</span>
-							<div class="catalog__image">
-								<img src="./assets/img/emc.png" alt="Dell EMC">
-							</div>
-							<div class="catalog__desc">
-								<p class="catalog__count">2345 товаров</p>
-								<p class="catalog__name">Dell EMC</p>
-							</div>
+							<figure class="catalog__figure">
+								<div class="catalog__image">
+									<img src="./assets/img/emc.png" alt="Dell EMC">
+								</div>
+								<figcaption class="catalog__desc">
+									<p class="catalog__count">2345 товаров</p>
+									<p class="catalog__name">Dell EMC</p>
+								</figcaption>
+							</figure>
 						</li>
 						<li class="catalog__item">
 							<span class="catalog__number">05</span>
-							<div class="catalog__image">
-								<img src="./assets/img/details-emc.png" alt="Detail Dell EMC">
-							</div>
-							<div class="catalog__desc">
-								<p class="catalog__count">195 товаров</p>
-								<p class="catalog__name">Запасные части к Dell EMC</p>
-							</div>
+							<figure class="catalog__figure">
+								<div class="catalog__image">
+									<img src="./assets/img/details-emc.png" alt="Detail Dell EMC">
+								</div>
+								<figcaption class="catalog__desc">
+									<p class="catalog__count">195 товаров</p>
+									<p class="catalog__name">Запасные части к Dell EMC</p>
+								</figcaption>
+							</figure>
 						</li>
 					</ul>
 				</div>
@@ -202,8 +217,8 @@
 					<div class="advantages__main">
 						<img src="./assets/img/advantages-laptop.png" alt="advantages-laptop">
 						<div class="advantages__info">
-							<p class="advantages__title">Наши преимущества</p>
-							<p class="advantages__text">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
+							<p class="title">Наши преимущества</p>
+							<p class="advantages__subtitle subtitle">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
 							<div class="button__more">
 								<a href="#">
 									<img src="./assets/svg/arrow-left.svg" alt="more">
@@ -217,10 +232,10 @@
 							<div class="advantages__back">
 								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
 							</div>
-							<div class="advantages__image">
+							<div class="advantages__img">
 								<img src="./assets/svg/card.svg" alt="card">
 							</div>
-							<div class="advantages__info">
+							<div class="advantages__text">
 								<p class="advantage__title">Самые выгодные и низкие цены</p>
 								<p class="advantages__desc">В наличии широкий ассортимент, а также доступные цены 
 									на ноутбуки Dell </p>
@@ -230,10 +245,10 @@
 							<div class="advantages__back">
 								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
 							</div>
-							<div class="advantages__image">
+							<div class="advantages__img">
 								<img src="./assets/svg/service.svg" alt="service">
 							</div>
-							<div class="advantages__info">
+							<div class="advantages__text">
 								<p class="advantage__title">Авторизованный сервисный центр DELL</p>
 								<p class="advantages__desc">Сертифицированный сервисный центр по ремонту техники Dell в России и странах СНГ </p>
 							</div>
@@ -242,10 +257,10 @@
 							<div class="advantages__back">
 								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
 							</div>
-							<div class="advantages__image">
+							<div class="advantages__img">
 								<img src="./assets/svg/people.svg" alt="people">
 							</div>
-							<div class="advantages__info">
+							<div class="advantages__text">
 								<p class="advantage__title">Высокий уровень технической экспертизы</p>
 								<p class="advantages__desc">Мы прошли аттестацию в виде тестирования, где показали высокий уровень знаний</p>
 							</div>
@@ -254,10 +269,10 @@
 							<div class="advantages__back">
 								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
 							</div>
-							<div class="advantages__image">
+							<div class="advantages__img">
 								<img src="./assets/svg/parther.svg" alt="parther">
 							</div>
-							<div class="advantages__info">
+							<div class="advantages__text">
 								<p class="advantage__title">Официальный партнер DELL</p>
 								<p class="advantages__desc">Официальный поставщик продукции DELL в России 
 									и странах СНГ</p>
@@ -273,123 +288,123 @@
 				<div class="news__container">
 					<div class="news__info">
 							<div class="news__text">
-								<p class="news__title">Последние новости</p>
-								<p class="news__subtitle">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
+								<p class="title">Последние новости</p>
+								<p class="subtitle">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
 							</div>
 							<div class="button__more button__more-news">
 								<a href="#">
 									<img src="./assets/svg/arrow-left.svg" alt="more">
 								</a>
-								<span>Оставить заявку</span>
+								<span>Все новости</span>
 							</div>
 					</div>
 					<ul class="news__items">
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-1.png" alt="news-1">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>	
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-2.png" alt="news-2">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-3.png" alt="news-3">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-4.png" alt="news-4">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-5.png" alt="news-5">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 						<li class="news__item">
-							<div class="news__date">
+							<address class="news__date">
 								<span class="news__number">11</span>
 								<span class="news__month">июля</span>
-							</div>
+							</address>
 							<div class="news__img">
 								<img src="./assets/img/news-6.png" alt="news-6">
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
 									<p class="news__article">GE использует технологии Dell</p>
-									<div class="news__button">
-										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
-									</div>
+									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
-								<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
+								<div class="news__button">
+									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -407,10 +422,10 @@
 				</div>
 				<div class="container">
 					<div class="connect__wrapper">
-						<div class="connect__contacts">
+						<aside class="connect__contacts">
 							<div class="connect__info">
-								<p class="connect__title">Наши контакты</p>
-								<p class="connect__subtitle">Вы можете связаться с нашим онлайн-консультантом</p>
+								<p class="contacts__title title">Наши контакты</p>
+								<p class="connect__subtitle subtitle">Вы можете связаться с нашим онлайн-консультантом</p>
 							</div>
 							<ul class="contacts__items">
 								<li class="contact__item">
@@ -433,7 +448,7 @@
 								</li>
 								<li class="contact__item">
 									<div class="contact__item">
-										<img src="./assets/svg/phone-contact.svg" alt="phone">
+										<img src="./assets/svg/phone.svg" alt="phone">
 									</div>
 									<div class="contact__info">
 										<p class="contact__title">Телефон</p>
@@ -446,15 +461,15 @@
 										<img src="./assets/svg/facebook.svg" alt="facebook">
 									</a>
 									<a href="#">
-										<img src="./assets/svg/phone.svg" alt="phone">
+										<img src="./assets/svg/whatsapp.svg" alt="whatsapp">
 									</a>
 								</li>
 							</ul>
-						</div>
-						<div class="connect__review">
+						</aside>
+						<aside class="connect__review">
 							<div class="connect__info">
-								<p class="connect__title">Оставьте заявку</p>
-								<p class="conect__subtitle">Оставьте свой номер, и мы перезвоним Вам.</p>
+								<p class="review__title title">Оставьте заявку</p>
+								<p class="connect__subtitle subtitle">Оставьте свой номер, и мы перезвоним Вам.</p>
 							</div>
 							<form class="connect__form" method="" action="">
 								<div class="connect__item">
@@ -467,10 +482,8 @@
 								</div>
 								<div class="connect__item">
 									<label class="connect__label">Комментарий</label>
-									<textarea rows="5" type="text" class="connect__input"></textarea>
+									<textarea rows="5" type="text" class="connect__input connect__input-textarea"></textarea>
 								</div>
-								</ul>
-
 								<div class="button__more button__review">
 									<button type="submit">
 										<img src="./assets/svg/arrow-left.svg" alt="more">
@@ -478,15 +491,14 @@
 									<span>Заказать</span>
 								</div>
 							</form>
-						</div>
-						<div class="connect__iphone">
+						</aside>
+						<aside class="connect__iphone">
 							<img src="./assets/img/iphone.png" alt="Iphone 13 Pro Max">
-						</div>
+						</aside>
 					</div>
 				</div>
 			</div>
 		</section>
-
 	</main>
 
 	<footer class="footer">
@@ -495,7 +507,7 @@
 		</div>
 		<div class="container">
 			<div class="footer__container">
-				<div class="footer__links">
+				<aside class="footer__links">
 					<div class="logo footer__logo">
 						<img src="./assets/svg/dell_logo.svg" alt="dell_logo">
 					</div>
@@ -558,31 +570,31 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
-				<div class="footer__info">
-					<ul class="info__items">
-						<li class="info__item">
+				</aside>
+				<aside>
+					<div class="info__items">
+						<address class="info__item">
 							<p class="info__title">Адрес</p>
 							<p class="info__desc">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
-						</li>
-						<li class="info__item">
+						</address>
+						<div class="info__item">
 							<p class="info__title">Телефон</p>
 							<p class="info__desc">+7 495 737-06-01, +7 495 737-06-01</p>
-						</li>
-						<li class="info__item">
+						</div>
+						<div class="info__item">
 							<p class="info__title">E-mail</p>
 							<p class="info__desc">dell_ru@gmail.com</p>
-						</li>
-						<li class="info__item info__item-socials">
+						</div>
+						<div class="info__item info__item-socials">
 							<a href="#">
 								<img src="./assets/svg/facebook.svg" alt="facebook">
 							</a>
 							<a href="#">
-								<img src="./assets/svg/phone.svg" alt="phone">
+								<img src="./assets/svg/whatsapp.svg" alt="whatsapp">
 							</a>
-						</li>
-					</ul>
-				</div>
+						</div>
+					</div>
+				</aside>
 			</div>
 		</div>
 	</footer>
