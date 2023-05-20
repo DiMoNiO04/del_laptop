@@ -27,7 +27,7 @@ a {
 	display: inline-flex;
 	align-items: center;
 	column-gap: 12px;
-	a {
+	a, button {
 		width: 55px;
 		height: 55px;
 		background: $blue;
@@ -35,6 +35,7 @@ a {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		border: none;
 	}
 	span {
 		font-weight: 400;
@@ -43,7 +44,7 @@ a {
 		color: $lighBlack;
 	}
 	&:hover {
-		a {
+		a, button{
 			opacity: 0.8;
 			@include hover;
 		}
@@ -503,7 +504,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	row-gap: 70px;
-	padding: 172px 0 526px 0;
+	padding: 172px 0 180px 0;
 }
 
 .news__info {
@@ -624,6 +625,169 @@ a {
 	}
 }
 //----Section news end--------------
+
+
+//----Section connets start----------
+.connect__backgrounds {
+	display: flex;
+	flex-direction: column;
+}
+
+.backgrounds__first {
+	height: 406px;
+	background: #F5F5F5;
+}
+
+.backgrounds__second {
+	background: linear-gradient(0deg, #EEEEEE, #EEEEEE), linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+	height: 676px;
+	position: relative;
+	img {
+		position: absolute;
+		bottom: 20px;
+	}
+}
+
+.connect__container {
+	position: relative;
+}
+
+.connect__wrapper {
+	display: flex;
+	position: absolute;
+	top: 0;
+}
+
+.connect__contacts, .connect__review {
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 55px;
+}
+
+.connect__contacts {
+	background: #F9F9F9;
+	border-radius: 20px 0px 0px 20px;
+	padding: 100px 165px 110px 100px;
+}
+
+.connect__review {
+	background: #292D32;
+	border-radius: 0px 20px 20px 0px;
+	padding: 100px 129px;
+}
+
+.connect__iphone {
+	position: absolute;
+  left: calc(50% - 420px/2);
+  top: 145px;
+}
+
+.connect__title {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 50px;
+	color: #292D32;
+	margin-bottom: 18px;
+}
+
+.connect__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #838383;
+}
+
+.connect__review p {
+	color: $white;
+}
+
+.contacts__items {
+	display: flex;
+	flex-direction: column;
+	.contact__item:nth-child(1) {
+		margin-bottom: 50px;
+	}
+		.contact__item:nth-child(2) {
+		margin-bottom: 73px;
+	}
+}
+
+.contact__item {
+	display: flex;
+	column-gap: 17px;
+	img {
+		width: 36px;
+		height: 36px;
+	}
+}
+
+.contact__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+	max-width: 358px;
+	&.contact__item-socials {
+		flex-direction: row;
+    margin-top: 60px;
+    column-gap: 18px;
+	}
+}
+
+.contact__title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #838383;
+}
+
+.contact__info {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 150%;
+	color: #292D32;
+}
+
+.connect__form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+
+.connect__item {
+	position: relative;
+}
+
+.connect__label {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	color: #F2F2F2;
+  background-color:  #292D32;
+  position: absolute;
+  padding: 0 12px;
+  top: calc(-24px / 2);
+  left: 23px;
+}
+
+.connect__input {
+	border: 1.5px solid rgba(242, 242, 242, 0.5);
+	border-radius: 20px;
+	background-color: inherit;
+	width: 434px;
+	padding: 16px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	color: #F2F2F2;
+}
+
+.button__review {
+	span {
+		color: $white;
+	}
+}
+//----Section connect end------------
 
 
 //-----Footer start-------------
