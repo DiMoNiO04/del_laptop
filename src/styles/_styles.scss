@@ -211,7 +211,8 @@ address {
 	}
 }
 
-.panel-item {
+.panel-item,
+.user-item {
 	position: relative;
 	width: 49px;
 	height: 49px;
@@ -270,6 +271,82 @@ address {
 	}
 	@media screen and (max-width: 768px) {
 		display: flex;
+	}
+}
+
+.panel-item__wrapper {
+	height: 450px;
+	width: 405px;
+	display: none;
+	position: absolute;
+	top: 40px;
+	flex-direction: column;
+	z-index: 2;
+	align-items: baseline;
+	justify-content: flex-end;
+	&.active {
+		display: inline-flex;
+	}
+	@media screen and (max-width: 1020px) {
+		height: 490px;
+		width: auto;
+		max-width: 405px;
+	}
+}
+
+.panel-item__user {
+	background: $white;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.user__items {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-name {
+	display: block;
+}
+
+.user__item {
+	border-bottom: 1px solid $lightWhite;
+	padding: 20px 30px;
+	&:first-child {
+		display: flex;
+		align-items: center;
+		padding: 30px;
+		column-gap: 20px;
+		a {
+			background: #F9F9F9;
+			width: 49px;
+			height: 49px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			column-gap: 20px;
+		}
+	}
+	a {
+		font-weight: 400;
+		font-size: 1em;
+		line-height: 150%;
+		color: $black;
+		&:hover {
+			@include hover;
+			color: $blue;
+		}
+	}
+}
+
+.user__decor {
+	position: absolute;
+	z-index: 2;
+	top: 45px;
+	left: calc(50% - 9px/2);
+	@media screen and (max-width: 1020px) {
+		top: 40px;
 	}
 }
 //------Header end---------------
