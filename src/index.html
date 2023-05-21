@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="header__container">
 				<div class="header__menu">
-					<div>
+					<div class="header__logo">
 						<img src="./assets/svg/dell_logo.svg" alt="dell_logo">
 					</div>
 					<nav>
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<div class="header__panel">
-					<p>Мария</p>
+					<p class="header__name">Мария</p>
 					<ul class="header__panel-items">
 						<li class="panel-item">
 							<a href="#">
@@ -71,6 +71,11 @@
 								<span class="panel-item__count">3</span>
 							</a>
 						</li>
+						<li class="panel-item burger__menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -83,7 +88,10 @@
 				<aside class="best__goods">
 					<div class="goods__container">
 						<div class="goods__del">
-							<img src="./assets/img/Dell.png" alt="dell">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/dell-min.png">
+								<img src="./assets/img/Dell.png" alt="dell">
+							</picture>
 						</div>
 						<div class="goods__info">
 							<div class="goods__scrool">
@@ -122,9 +130,13 @@
 				</aside>
 				<aside class="best__offers">
 					<div class="offers__container">
-						<img src="./assets/img/offer-laptop.png" alt="offer-laptop">
-						<p>Выгодное предложение от Dell</p>
+						<picture>
+							<source media="(max-width: 768px)" srcset="./assets/img/offer-laptop-min.png">
+							<img src="./assets/img/offer-laptop.png" alt="offer-laptop">
+						</picture>
+						<p class="offers__text">Выгодное предложение от Dell</p>
 					</div>
+					
 				</aside>
 			</div>
 		</section>
@@ -147,7 +159,10 @@
 							<span class="catalog__number">01</span>
 							<figure class="catalog__figure">
 								<div class="catalog__image">
-									<img src="./assets/img/laptoops.png" alt="Laptoops">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/laptoops-min.png">
+										<img src="./assets/img/laptoops.png" alt="Laptoops">
+									</picture>
 								</div>
 								<figcaption class="catalog__desc">
 									<p class="catalog__count">105 товаров</p>
@@ -159,7 +174,10 @@
 							<span class="catalog__number">02</span>
 							<figure class="catalog__figure">
 								<div class="catalog__image">
-									<img src="./assets/img/PK.png" alt="PK">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/PK-min.png">
+										<img src="./assets/img/PK.png" alt="PK">
+									</picture>
 								</div>
 								<figcaption class="catalog__desc">
 									<p class="catalog__count">65 товаров</p>
@@ -171,7 +189,10 @@
 							<span class="catalog__number">03</span>
 							<figure class="catalog__figure">
 								<div class="catalog__image">
-									<img src="./assets/img/servers.png" alt="Servers">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/servers-min.png">
+										<img src="./assets/img/servers.png" alt="Servers">
+									</picture>
 								</div>
 								<figcaption class="catalog__desc">
 									<p class="catalog__count">13 товаров</p>
@@ -183,7 +204,10 @@
 							<span class="catalog__number">04</span>
 							<figure class="catalog__figure">
 								<div class="catalog__image">
-									<img src="./assets/img/emc.png" alt="Dell EMC">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/emc-min.png">
+										<img src="./assets/img/emc.png" alt="Dell EMC">
+									</picture>
 								</div>
 								<figcaption class="catalog__desc">
 									<p class="catalog__count">2345 товаров</p>
@@ -195,7 +219,10 @@
 							<span class="catalog__number">05</span>
 							<figure class="catalog__figure">
 								<div class="catalog__image">
-									<img src="./assets/img/details-emc.png" alt="Detail Dell EMC">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/details-emc-min.png">
+										<img src="./assets/img/details-emc.png" alt="Detail Dell EMC">
+									</picture>
 								</div>
 								<figcaption class="catalog__desc">
 									<p class="catalog__count">195 товаров</p>
@@ -210,14 +237,22 @@
 
 		<section class="advantages" id="advantages">
 			<div class="advantages__best">
-				<img src="./assets/img/best-quality.png" alt="best-quality">
+				<picture>
+					<source media="(max-width: 768px)" srcset="./assets/img/best-quality-min.png">
+					<img src="./assets/img/best-quality.png" alt="best-quality">
+				</picture>
 			</div>
 			<div class="container">
 				<div class="advantages__container">
 					<div class="advantages__main">
-						<img src="./assets/img/advantages-laptop.png" alt="advantages-laptop">
+						<div class="advantages__image">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/advantages-laptoop-min.png">
+								<img src="./assets/img/advantages-laptop.png" alt="advantages-laptop">
+							</picture>
+						</div>
 						<div class="advantages__info">
-							<p class="title">Наши преимущества</p>
+							<p class="advantages__title title">Наши преимущества</p>
 							<p class="advantages__subtitle subtitle">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
 							<div class="button__more">
 								<a href="#">
@@ -230,50 +265,66 @@
 					<ul class="advantages__items">
 						<li class="advantages__item">
 							<div class="advantages__back">
-								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/svg/advantage-min-back.svg">
+									<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								</picture>
 							</div>
 							<div class="advantages__img">
 								<img src="./assets/svg/card.svg" alt="card">
 							</div>
 							<div class="advantages__text">
 								<p class="advantage__title">Самые выгодные и низкие цены</p>
+								<p class="advantage__title-min">У нас самые выгодные и низкие цены </p>
 								<p class="advantages__desc">В наличии широкий ассортимент, а также доступные цены 
 									на ноутбуки Dell </p>
 							</div>
 						</li>
 						<li class="advantages__item">
 							<div class="advantages__back">
-								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/svg/advantage-min-back.svg">
+									<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								</picture>
 							</div>
 							<div class="advantages__img">
 								<img src="./assets/svg/service.svg" alt="service">
 							</div>
 							<div class="advantages__text">
 								<p class="advantage__title">Авторизованный сервисный центр DELL</p>
+								<p class="advantage__title-min">Авторизованный сервисный центр DELL</p>
 								<p class="advantages__desc">Сертифицированный сервисный центр по ремонту техники Dell в России и странах СНГ </p>
 							</div>
 						</li>
 						<li class="advantages__item">
 							<div class="advantages__back">
-								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/svg/advantage-min-back.svg">
+									<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								</picture>
 							</div>
 							<div class="advantages__img">
 								<img src="./assets/svg/people.svg" alt="people">
 							</div>
 							<div class="advantages__text">
 								<p class="advantage__title">Высокий уровень технической экспертизы</p>
+								<p class="advantage__title-min">Высокий уровень технической экспертизы </p>
 								<p class="advantages__desc">Мы прошли аттестацию в виде тестирования, где показали высокий уровень знаний</p>
 							</div>
 						</li>
 						<li class="advantages__item">
 							<div class="advantages__back">
-								<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/svg/advantage-min-back.svg">
+									<img src="./assets/svg/advantage-back.svg" alt="advantage-back">
+								</picture>
 							</div>
 							<div class="advantages__img">
 								<img src="./assets/svg/parther.svg" alt="parther">
 							</div>
 							<div class="advantages__text">
 								<p class="advantage__title">Официальный партнер DELL</p>
+								<p class="advantage__title-min">Мы являемся официальным партнером DELL</p>
 								<p class="advantages__desc">Официальный поставщик продукции DELL в России 
 									и странах СНГ</p>
 							</div>
@@ -288,7 +339,7 @@
 				<div class="news__container">
 					<div class="news__info">
 							<div class="news__text">
-								<p class="title">Последние новости</p>
+								<p class="news__title title">Последние новости</p>
 								<p class="subtitle">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
 							</div>
 							<div class="button__more button__more-news">
@@ -305,7 +356,10 @@
 								<span class="news__month">июля</span>
 							</address>
 							<div class="news__img">
-								<img src="./assets/img/news-1.png" alt="news-1">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/news-1-min.png">
+									<img src="./assets/img/news-1.png" alt="news-1">
+								</picture>
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
@@ -313,7 +367,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>	
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -323,7 +380,10 @@
 								<span class="news__month">июля</span>
 							</address>
 							<div class="news__img">
-								<img src="./assets/img/news-2.png" alt="news-2">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/news-2-min.png">
+									<img src="./assets/img/news-2.png" alt="news-2">
+								</picture>
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
@@ -331,7 +391,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -341,7 +404,10 @@
 								<span class="news__month">июля</span>
 							</address>
 							<div class="news__img">
-								<img src="./assets/img/news-3.png" alt="news-3">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/news-3-min.png">
+									<img src="./assets/img/news-3.png" alt="news-3">
+								</picture>
 							</div>
 							<div class="news__main">
 								<div class="news__title-button">
@@ -349,7 +415,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -367,7 +436,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -385,7 +457,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -403,7 +478,10 @@
 									<p class="news__desc">Вы можете посмотреть ещё больше интересных </p>
 								</div>
 								<div class="news__button">
-									<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/svg/new-button-min.svg">
+										<img src="./assets/svg/new-button.svg" alt="new-button" title="Открыть">
+									</picture>
 								</div>
 							</div>
 						</li>
@@ -493,7 +571,10 @@
 							</form>
 						</aside>
 						<aside class="connect__iphone">
-							<img src="./assets/img/iphone.png" alt="Iphone 13 Pro Max">
+							<picture>
+								<source media="(max-width: 1020px)" srcset="./assets/img/iphone-min.png">
+								<img src="./assets/img/iphone.png" alt="Iphone 13 Pro Max">
+							</picture>
 						</aside>
 					</div>
 				</div>
@@ -503,13 +584,16 @@
 
 	<footer class="footer">
 		<div class="footer__image">
-			<img src="./assets/img/dell-footer.png" alt="dell-footer">
+			<picture>
+				<source media="(max-width: 1020px)" srcset="./assets/img/dell-footer-min.png">
+				<img src="./assets/img/dell-footer.png" alt="dell-footer">
+			</picture>
 		</div>
 		<div class="container">
 			<div class="footer__container">
 				<aside class="footer__links">
 					<div class="logo footer__logo">
-						<img src="./assets/svg/dell_logo.svg" alt="dell_logo">
+						<img src="./assets/img/dell-logo-footer.png" alt="dell_logo">
 					</div>
 					<ul class="footer__menu">
 						<li class="footer__menu-items">
