@@ -1275,6 +1275,29 @@ address {
   padding: 0 12px;
 	top: -11px;
 	left: 11px;
+	&.err {
+		color: red;
+		font-size: 1em;
+		font-style: italic;
+	}
+}
+
+.error, 
+.success {
+	font-size: 1.2em;
+	font-style: italic;
+	display: none;
+	&.message {
+		display: block;
+	}
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
 }
 
 .connect__input {

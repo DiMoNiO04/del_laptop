@@ -549,21 +549,23 @@
 								<p class="review__title title">Оставьте заявку</p>
 								<p class="connect__subtitle subtitle">Оставьте свой номер, и мы перезвоним Вам.</p>
 							</div>
-							<form class="connect__form" method="" action="">
+							<form class="connect__form" method="" action="" id="connect__form">
+								<div class="error">Не корректно заполнена форма!</div>
+								<div class="success">Завка отправлена!</div>
 								<div class="connect__item">
-									<label class="connect__label">Ваше имя</label>
-									<input type="text" class="connect__input">
+									<label class="connect__label" id="label__name">Ваше имя</label>
+									<input name="name" type="text" id="input__name" class="connect__input" required>
 								</div>
 								<div class="connect__item">
-									<label class="connect__label">Номер телефона</label>
-									<input type="text" class="connect__input">
+									<label class="connect__label" id="label__phone">Номер телефона</label>
+									<input name="phone" type="text" class="connect__input" id="input__phone" required>
 								</div>
 								<div class="connect__item">
-									<label class="connect__label">Комментарий</label>
-									<textarea rows="5" type="text" class="connect__input connect__input-textarea"></textarea>
+									<label class="connect__label" id="label__comment">Комментарий</label>
+									<textarea name="comment" rows="5" type="text" class="connect__input connect__input-textarea" id="input__comment" required></textarea>
 								</div>
 								<div class="button__more button__review">
-									<button type="submit">
+									<button type="submit" id="button__form">
 										<img src="./assets/svg/arrow-left.svg" alt="more">
 									</button>
 									<span>Заказать</span>
