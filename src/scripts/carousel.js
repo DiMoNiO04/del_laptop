@@ -8,58 +8,56 @@ const BUTTON = document.querySelector('.carousel__button');
 let count = 0;
 let width;
 
-const rollSlider = () => SLIDER_LINE.style.transform = 'translate(-' + count * width + 'px)';
+const rollSlider = () => {
+  SLIDER_LINE.style.transform = `translate(-${count * width}px)`;
+};
 
-const setSize = () => {
-	width = SLIDER_CONTAINER.offsetWidth;
-	SLIDER_LINE.style.width = width * IMAGES.length + 'px';
-	IMAGES.forEach(img => {
-		img.style.width = width + 'px';
-		img.style.height = 'auto';
-	})
-	rollSlider();
-}
-
-
-BUTTON.addEventListener('click', () => {
-	count++;
-	if(count >= IMAGES.length) {
-		count = 0;
-	}
-	rollSlider()
-	setActiveDot()
-})
-
-
-DOTS_CONTAINER.addEventListener('click', (event) => {
-	const NAME = 0;
-	const NUMBER = 1;
-	if(event.target.id.split('-')[NAME] !== 'dot') {
-		return;
-	}
-	count = event.target.id.split('-')[NUMBER] - 1;
-	rollSlider();
-	setActiveDot();
-})
-
-
-const addActiveDot = () => DOTS[count].classList.add('carousel__dot_active')
+const addActiveDot = () => DOTS[count].classList.add('carousel__dot_active');
 
 const removeActiveDot = () => {
-	DOTS.forEach(dot => {
-		dot.classList.remove('carousel__dot_active');
-	})	
-}
+  DOTS.forEach((dot) => {
+    dot.classList.remove('carousel__dot_active');
+  });
+};
 
 const setActiveDot = () => {
-	removeActiveDot();
-	addActiveDot();
-}
+  removeActiveDot();
+  addActiveDot();
+};
 
+const setSize = () => {
+  width = SLIDER_CONTAINER.offsetWidth;
+  SLIDER_LINE.style.width = `${width * IMAGES.length}px`;
+  IMAGES.forEach((img) => {
+    img.style.width = `${width}px`;
+    img.style.height = 'auto';
+  });
+  rollSlider();
+};
+
+BUTTON.addEventListener('click', () => {
+  count += 1;
+  if (count >= IMAGES.length) {
+    count = 0;
+  }
+  rollSlider();
+  setActiveDot();
+});
+
+DOTS_CONTAINER.addEventListener('click', (event) => {
+  const NAME = 0;
+  const NUMBER = 1;
+  if (event.target.id.split('-')[NAME] !== 'dot') {
+    return;
+  }
+  count = event.target.id.split('-')[NUMBER] - 1;
+  rollSlider();
+  setActiveDot();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-	setSize();
-	setActiveDot();
-})
+  setSize();
+  setActiveDot();
+});
 
 window.addEventListener('resize', setSize);

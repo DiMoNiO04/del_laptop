@@ -11,6 +11,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-		"import/prefer-default-export": "off"
+		"import/prefer-default-export": "off",
+		"no-param-reassign": 0,
+		"no-alert": "off"
   },
 };
