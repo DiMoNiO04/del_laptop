@@ -1,0 +1,14 @@
+$white: #FFFFFF;
+$darkWhite: #F9F9F9;
+$lightWhite: #F2F2F2;
+$veryLightWhite: #F5F5F5;
+$blue: #33A9FF;
+$colorCount: #3086C8;
+$black: #000000;
+$lighBlack: #292D32;
+$lightGray: #838383;
+
+@mixin hover {
+  transition: all 0.25s ease-in-out;
+	cursor: pointer;
+}
